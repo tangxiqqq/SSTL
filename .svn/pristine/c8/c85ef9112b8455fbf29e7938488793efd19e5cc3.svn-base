@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="上海计算机软件技术开发中心-上海市计算机软件评测重点实验室"/>
+    <meta name="keywords" content="软件中心;软件评测;重点实验室"/>
+    <meta name="author" content="SSTL"/>
+    <title>上海市计算机软件评测重点实验室</title>
+    <link href="/images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/dist/css/javascript-plugins-bundle.css" rel="stylesheet"/>
+    <link href="/assets/dist/js/menuzord/css/menuzord.css" rel="stylesheet"/>
+    <link href="/assets/dist/js/timeline-cp-responsive-vertical/timeline-cp-responsive-vertical.css" rel="stylesheet"
+          type="text/css">
+    <link href="/assets/dist/css/style-main.css" rel="stylesheet" type="text/css">
+    <link id="menuzord-menu-skins" href="/assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css"
+          rel="stylesheet"/>
+    <link href="/assets/dist/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="/assets/dist/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
+    <script src="/assets/dist/js/jquery.js"></script>
+    <script src="/assets/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/dist/js/javascript-plugins-bundle.js"></script>
+    <script src="/assets/dist/js/menuzord/js/menuzord.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/dist/js/revolution-slider/css/rs6.css">
+    <script type="text/javascript" src="/assets/dist/js/revolution-slider/js/revolution.tools.min.js"></script>
+    <script type="text/javascript" src="/assets/dist/js/revolution-slider/js/rs6.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/assets/dist/js/ie-support/html5shiv.min.js"></script>
+    <script src="/assets/dist/js/ie-support/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        function getVerCode(){
+            time(document.getElementById("getCodeButton"),60);
+            jQuery.ajax({
+                url: "/getVerCode?phone="+document.getElementById("phone").value,
+                type: "get"
+            })
+        }
+
+        function time(o, wait) {
+            if (wait == 0) {
+                o.removeAttribute("disabled");
+                o.value = "获取验证码";
+                wait = 60;
+            }
+            else {
+                if (wait == 60) {
+                    TbxFocus();
+                }
+                o.setAttribute("disabled", true);
+                o.value = "还剩" + wait + "秒";
+                wait--;
+                setTimeout(function() { time(o, wait) }, 1000);
+            }
+        }
+
+        function TbxFocus() {
+            document.getElementById('vercode').focus();
+        }
+
+        function subContent(){
+            if(document.getElementById("cname").value == ''){
+                alert("请输入公司名称");
+                return;
+            }
+            if(document.getElementById("name").value == ''){
+                alert("请输入项目名称");
+                return;
+            }
+            if(document.getElementById("code").value == ''){
+                alert("请输入项目编号");
+                return;
+            }
+            if(document.getElementById("phone").value == ''){
+                alert("请输入手机号");
+                return;
+            }
+            if(document.getElementById("vercode").value == ''){
+                alert("请输入验证码");
+                return;
+            }
+            document.getElementById("uid-n").value = document.getElementById("uid").value;
+            document.getElementById("cid-n").value = document.getElementById("cid").value;
+            document.getElementById("show-n").value = "项目整体满意度:" + document.getElementById("show1").innerText
+                + "|" + "受理人员沟通能力:" + document.getElementById("show2").innerText
+                + "|" + "服务人员沟通能力:" + document.getElementById("show3").innerText
+                + "|" + "服务人员工作规范性:" + document.getElementById("show4").innerText
+                + "|" + "服务人员专业能力:" + document.getElementById("show5").innerText
+                + "|" + "项目响应与处理效率:" + document.getElementById("show6").innerText + "|";
+            document.getElementById("suggests-n").value = document.getElementById("suggests").value;
+            document.getElementById("cname-n").value = document.getElementById("cname").value;
+            document.getElementById("name-n").value = document.getElementById("name").value;
+            document.getElementById("code-n").value = document.getElementById("code").value;
+            document.getElementById("phone-n").value = document.getElementById("phone").value;
+            document.getElementById("vercode-n").value = document.getElementById("vercode").value;
+            document.forms[0].submit();
+        }
+    </script>
+</head>
+<body class="container-1340px">
+<div id="wrapper" class="clearfix">
+    <header th:replace="common::topbar"></header>
+    <div class="main-content-area">
+        <section class="page-title divider layer-overlay overlay-dark-8 section-typo-light bg-img-center"
+                 data-tm-bg-img="/images/bg/as02.jpg">
+            <div class="container pt-90 pb-90">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="title text-white" th:text="服务现场满意度调查表"></h2>
+                            <nav role="navigation" class="breadcrumb-trail breadcrumbs">
+                                <div class="breadcrumbs">
+									<span class="trail-item trail-begin">
+										<a href="/"><span>首页</span></a>
+									</span>
+                                    <span><i class="fa fa-angle-right"></i></span>
+                                    <span class="trail-item trail-end text-theme-colored1"><span
+                                            th:text="服务现场满意度调查表"></span></span>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container pb-80">
+                <input type="hidden" id="uid" th:value="${uid}">
+                <input type="hidden" id="cid" th:value="${cid}">
+                <input type="hidden" id="guid" th:value="${guid}">
+                <hr>
+                <strong>项目整体满意度</strong><br>
+                满分10分，当前得分：<span id="show1">10</span>分<br>
+                <input id="slider1" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show1').innerHTML=value"/>
+                <br>
+                <strong>受理人员沟通能力</strong><br>
+                满分10分，当前得分：<span id="show2">10</span>分<br>
+                <input id="slider2" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show2').innerHTML=value"/>
+                <br>
+                <strong>服务人员沟通能力</strong><br>
+                满分10分，当前得分：<span id="show3">10</span>分<br>
+                <input id="slider3" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show3').innerHTML=value"/>
+                <br>
+                <strong>服务人员工作规范性</strong><br>
+                满分10分，当前得分：<span id="show4">10</span>分<br>
+                <input id="slider4" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show4').innerHTML=value"/>
+                <br>
+                <strong>服务人员专业能力</strong><br>
+                满分10分，当前得分：<span id="show5">10</span>分<br>
+                <input id="slider5" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show5').innerHTML=value"/>
+                <br>
+                <strong>项目响应与处理效率</strong><br>
+                满分10分，当前得分：<span id="show6">10</span>分<br>
+                <input id="slider6" type="range" min="0" max="10" step="1" value="10" style="width:100%"
+                       onchange="document.getElementById('show6').innerHTML=value"/>
+                <br>
+                <strong>改进建议（非必填）</strong>
+                <div class="section-content">
+                    <input type="text" class="form-control" placeholder="输入改进建议" value="" id="suggests">
+                </div>
+                <br>
+                <hr>
+                <strong>公司名称</strong>
+                <div class="section-content">
+                    <input type="text" class="form-control" placeholder="输入公司名称" value="" id="cname">
+                </div>
+                <br>
+                <strong>项目编号</strong>
+                <div class="section-content">
+                    <input type="text" class="form-control" placeholder="输入项目编号" th:value="${code}" id="code">
+                </div>
+                <br>
+                <strong>项目名称</strong>
+                <div class="section-content">
+                    <input type="text" class="form-control" placeholder="输入项目名称" th:value="${name}" id="name">
+                </div>
+                <br>
+                <strong>手机号</strong>
+                <div class="section-content">
+                    <form role="search" method="post" class="search-form" action="/subContent">
+                        <input type="search" class="form-control search-field" placeholder="输入手机号" value="" id="phone"
+                               name="phoneforver">
+                        <input type="button" class="search-submit" onclick="getVerCode()" id="getCodeButton" value="获取验证码">
+                        <input type="hidden" name="tag2" value="" id="uid-n">
+                        <input type="hidden" name="tag1" value="" id="cid-n">
+                        <input type="hidden" name="item" value="" id="show-n">
+                        <input type="hidden" name="otherImprovement" value="" id="suggests-n">
+                        <input type="hidden" name="companyName" value="" id="cname-n">
+                        <input type="hidden" name="projectName" value="" id="name-n">
+                        <input type="hidden" name="projectCode" value="" id="code-n">
+                        <input type="hidden" name="mobile" value="" id="phone-n">
+                        <input type="hidden" name="tag3" value="" id="vercode-n">
+                    </form>
+                </div>
+                <br>
+                <strong>验证码</strong>
+                <div class="section-content">
+                    <input type="text" class="form-control" placeholder="输入验证码" value="" id="vercode">
+                </div>
+                <br>
+                <hr>
+                <div class="section-content" style="text-align: center">
+                    <a onclick="subContent()" class="btn btn-theme-colored1">提交</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer th:replace="common::bottombar"></footer>
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script src="/assets/dist/js/custom.js"></script>
+<script src="/assets/dist/js/simpleLoadMore.js"></script>
+</body>
+</html>
+

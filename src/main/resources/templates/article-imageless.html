@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta name="description" content="上海计算机软件技术开发中心-上海市计算机软件评测重点实验室"/>
+	<meta name="keywords" content="软件中心;软件评测;重点实验室"/>
+	<meta name="author" content="SSTL"/>
+	<title>上海市计算机软件评测重点实验室</title>
+	<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+	<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+	<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/dist/css/javascript-plugins-bundle.css" rel="stylesheet"/>
+	<link href="assets/dist/js/menuzord/css/menuzord.css" rel="stylesheet"/>
+	<link href="assets/dist/js/timeline-cp-responsive-vertical/timeline-cp-responsive-vertical.css" rel="stylesheet" type="text/css">
+	<link href="assets/dist/css/style-main.css" rel="stylesheet" type="text/css">
+	<link id="menuzord-menu-skins" href="assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+	<link href="assets/dist/css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="assets/dist/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
+	<script src="assets/dist/js/jquery.js"></script>
+	<script src="assets/dist/js/bootstrap.min.js"></script>
+	<script src="assets/dist/js/javascript-plugins-bundle.js"></script>
+	<script src="assets/dist/js/menuzord/js/menuzord.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/dist/js/revolution-slider/css/rs6.css">
+	<script type="text/javascript" src="assets/dist/js/revolution-slider/js/revolution.tools.min.js"></script>
+	<script type="text/javascript" src="assets/dist/js/revolution-slider/js/rs6.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="assets/dist/js/ie-support/html5shiv.min.js"></script>
+	<script src="assets/dist/js/ie-support/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="container-1340px">
+<div id="wrapper" class="clearfix">
+	<header th:replace="common::topbar"></header>
+	<div class="main-content-area">
+		<section class="page-title divider layer-overlay overlay-dark-8 section-typo-light bg-img-center" data-tm-bg-img="images/bg/as02.jpg">
+			<div class="container pt-90 pb-90">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="title text-white" th:text="${article.title}"></h2>
+							<nav role="navigation" class="breadcrumb-trail breadcrumbs">
+								<div class="breadcrumbs">
+									<span class="trail-item trail-begin">
+										<a href="/"><span>首页</span></a>
+									</span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item"><a th:href="@{'/list?typestr=' + ${typestr}}"><span th:text="${typestr}"></span></a></span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item trail-end text-theme-colored1"><span th:text="${#dates.format(article.createdate, 'yyyy-MM-dd HH:mm:ss')}"></span></span>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-60">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-sm-9">
+							<article class="post-single">
+								<blockquote class="tm-sc tm-sc-blockquote blockquote-style3  quote-icon-theme-colored mb-20 mt-20">
+									<footer><cite>摘要</cite></footer>
+									<p th:text="${article.abstractstr}"></p>
+								</blockquote>
+								<div class="entry-content" th:utext="${article.content}"></div>
+							</article>
+						</div>
+						<div class="col-lg-3 sidebar-area sidebar-right">
+							<div class=" split-nav-menu clearfix widget widget_search">
+								<form role="search" method="post" class="search-form" action="searchArticle">
+									<input type="search" class="form-control search-field" placeholder="搜索文章标题" value="" name="title">
+									<button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+								</form>
+							</div>
+							<div class="split-nav-menu clearfix widget widget-blog-list clearfix">
+								<h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1" th:text="${typestr}"></h4>
+								<div class="tm-widget tm-widget-blog-list ">
+									<article class="post media-post clearfix" th:each="near : ${nearList}">
+										<div class="post-right">
+											<h6 class="post-title"> <a th:href="@{'/article?articleId=' + ${near.id}}" th:text="${near.title}"></a></h6>
+											<span class="post-date">
+												<span class="entry-date" th:text="${#dates.format(near.createdate, 'yyyy-MM-dd HH:mm:ss')}"></span>
+											</span>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="widget widget_categories">
+								<h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">栏目导航</h4>
+								<ul>
+									<li class="cat-item cat-item-16"><a href="/list?typestr=公示公告">公示公告</a></li>
+									<li class="cat-item cat-item-16"><a href="/list?typestr=新闻中心">新闻中心</a></li>
+									<li class="cat-item cat-item-17"><a href="/list?typestr=评测申请">评测申请</a></li>
+									<li class="cat-item cat-item-17"><a href="/list?typestr=业务介绍">业务介绍</a></li>
+									<li class="cat-item cat-item-18"><a href="/list?typestr=典型案例">典型案例</a></li>
+									<li class="cat-item cat-item-18"><a href="/list?typestr=技术交流">技术交流</a></li>
+									<li class="cat-item cat-item-19"><a href="/list?typestr=知识产权">知识产权</a></li>
+									<li class="cat-item cat-item-19"><a href="/list?typestr=报告公告">报告公告</a></li>
+								</ul>
+							</div>
+							<div class=" split-nav-menu clearfix widget widget-brochure-box clearfix"><a class="tm-widget tm-widget-brochure-box tm-widget-brochure-box-default brochure-box brochure-box-default  brochure-box-theme-colored1 mb-10" href="https://www.sstl-business.org.cn/" target="_blank"> <i class="brochure-icon fa fa-send"></i>
+								<h5 class="text">业务受理</h5>
+								</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer th:replace="common::bottombar"></footer>
+	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script src="assets/dist/js/custom.js"></script>
+
+</body>
+</html>
+

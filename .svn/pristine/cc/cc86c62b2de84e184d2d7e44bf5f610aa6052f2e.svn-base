@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="上海计算机软件技术开发中心-上海市计算机软件评测重点实验室"/>
+<meta name="keywords" content="软件中心;软件评测;重点实验室"/>
+<meta name="author" content="SSTL"/>
+<title>上海市计算机软件评测重点实验室</title>
+<!--	<link href="assets/css/demo.css" rel="stylesheet" type="text/css">-->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/javascript-plugins-bundle.css" rel="stylesheet"/>
+<link href="assets/dist/js/menuzord/css/menuzord.css" rel="stylesheet"/>
+<link href="assets/dist/js/timeline-cp-responsive-vertical/timeline-cp-responsive-vertical.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/style-main.css" rel="stylesheet" type="text/css">
+<link id="menuzord-menu-skins" href="assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+<link href="assets/dist/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
+<script src="assets/dist/js/jquery.js"></script>
+<script src="assets/dist/js/bootstrap.min.js"></script>
+<script src="assets/dist/js/javascript-plugins-bundle.js"></script>
+<script src="assets/dist/js/menuzord/js/menuzord.js"></script>
+<link rel="stylesheet" type="text/css" href="assets/dist/js/revolution-slider/css/rs6.css">
+<script type="text/javascript" src="assets/dist/js/revolution-slider/js/revolution.tools.min.js"></script>
+<script type="text/javascript" src="assets/dist/js/revolution-slider/js/rs6.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="assets/dist/js/ie-support/html5shiv.min.js"></script>
+	<script src="assets/dist/js/ie-support/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="container-1340px">
+<div id="wrapper" class="clearfix">
+	<header th:replace="common::topbar"></header>
+	<div class="main-content-area">
+		<section id="home" class="">
+			<div class="container-fluid p-0">
+				<div class="row">
+					<div class="col">
+						<p class="rs-p-wp-fix"></p>
+						<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="home-slider-2" data-source="gallery">
+							<rs-module id="rev_slider_1_1" data-version="6.0.8">
+								<rs-slides>
+									<rs-slide data-key="rs-1" data-title="Slide" data-thumb="images/bg/as3.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+										<img src="images/bg/as02.jpg" title="s1.jpg" width="1920" height="1001" class="rev-slidebg" data-no-retina>
+										<rs-layer
+											id="slider-1-slide-1-layer-5"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:260px,214px,162px,127px;"
+											data-text="w:normal;s:24,19,14,8;l:25,20,15,9;fw:300;"
+											data-frame_0="y:50;"
+											data-frame_1="st:300;sp:1000;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											style="z-index:16;font-family:Rubik;"
+											>技术领先，科学公正。客户满意，不断创新！
+										</rs-layer>
+										<rs-layer
+												id="slider-1-slide-1-layer-6"
+												data-type="text"
+												data-rsp_ch="on"
+												data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:311px,256px,194px,149px;"
+												data-text="w:normal;s:90,74,56,34;l:95,78,59,36;ls:-1px,0px,0px,0px;fw:900;a:left,left,left,center;"
+												data-dim="w:auto,auto,auto,243px;h:303px,250px,189px,116px;"
+												data-frame_0="x:-50,-41,-31,-19;"
+												data-frame_1="st:1010;sp:1000;sR:1010;"
+												data-frame_999="o:0;st:w;sR:6990;"
+												style="z-index:15;font-family:Playfair Display;"
+										>专业服务
+											<span class="text-theme-colored1">.</span>
+										</rs-layer>
+										<rs-layer
+												id="slider-1-slide-1-layer-9"
+												class="rev-btn btn-theme-colored1"
+												data-type="button"
+												data-color="#252628"
+												data-rsp_ch="on"
+												data-xy="x:l,l,l,c;xo:30px,30px,30px,0;y:m;yo:213px,196px,114px,66px;"
+												data-text="w:normal;s:16,13,9,5;l:50,41,31,19;fw:500;a:center;"
+												data-dim="w:147px,121px,91px,56px;minh:0px,none,none,none;"
+												data-padding="r:20,17,13,8;l:20,17,13,8;"
+												data-border="boc:rgba(255,255,255,0.35);bow:1px,1px,1px,1px;bor:25px,25px,25px,25px;"
+												data-frame_0="x:-175%;o:1;"
+												data-frame_0_mask="u:t;x:100%;"
+												data-frame_1="e:Power3.easeOut;st:1440;sp:1000;sR:1440;"
+												data-frame_1_mask="u:t;"
+												data-frame_999="o:0;st:w;sR:6560;"
+												data-frame_hover="c:#000;bgc:#fff;boc:rgba(255,255,255,0.75);bor:25px,25px,25px,25px;bow:1px,1px,1px,1px;sp:200;e:Power1.easeInOut;"
+												style="z-index:13;font-family:Rubik;"
+										>了解更多
+										</rs-layer>
+									</rs-slide>
+									<rs-slide data-key="rs-2" data-title="Slide" data-thumb="images/bg/as02.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+										<img src="images/bg/as02.jpg" title="s3.jpg" width="1920" height="1001" class="rev-slidebg" data-no-retina>
+										<rs-layer
+											id="slider-1-slide-2-layer-5"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:260px,214px,162px,127px;"
+											data-text="w:normal;s:24,19,14,8;l:25,20,15,9;fw:300;"
+											data-frame_0="y:50;"
+											data-frame_1="st:300;sp:1000;"
+											data-frame_999="o:0;st:w;sR:7700;"
+											style="z-index:16;font-family:Rubik;"
+											>为信息系统高效、稳定、健康上线与运行
+										</rs-layer>
+										<rs-layer
+											id="slider-1-slide-2-layer-6"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:311px,256px,194px,149px;"
+											data-text="w:normal;s:90,74,56,34;l:95,78,59,36;ls:-1px,0px,0px,0px;fw:900;a:left,left,left,center;"
+											data-dim="w:auto,auto,auto,243px;h:303px,250px,189px,116px;"
+											data-frame_0="x:-50,-41,-31,-19;"
+											data-frame_1="st:1010;sp:1000;sR:1010;"
+											data-frame_999="o:0;st:w;sR:6990;"
+											style="z-index:15;font-family:Playfair Display;"
+											>保驾护航
+											<span class="text-theme-colored1">.</span>
+										</rs-layer>
+										<rs-layer
+											id="slider-1-slide-2-layer-9"
+											class="rev-btn btn-theme-colored1"
+											data-type="button"
+											data-color="#252628"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;y:m;yo:213px,196px,114px,66px;"
+											data-text="w:normal;s:16,13,9,5;l:50,41,31,19;fw:500;a:center;"
+											data-dim="w:147px,121px,91px,56px;minh:0px,none,none,none;"
+											data-padding="r:20,17,13,8;l:20,17,13,8;"
+											data-border="boc:rgba(255,255,255,0.35);bow:1px,1px,1px,1px;bor:25px,25px,25px,25px;"
+											data-frame_0="x:-175%;o:1;"
+											data-frame_0_mask="u:t;x:100%;"
+											data-frame_1="e:Power3.easeOut;st:1440;sp:1000;sR:1440;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:0;st:w;sR:6560;"
+											data-frame_hover="c:#000;bgc:#fff;boc:rgba(255,255,255,0.75);bor:25px,25px,25px,25px;bow:1px,1px,1px,1px;sp:200;e:Power1.easeInOut;"
+											style="z-index:13;font-family:Rubik;"
+											>了解更多
+										</rs-layer>
+									</rs-slide>
+									<rs-slide data-key="rs-3" data-title="Slide" data-thumb="images/bg/as1.jpg" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+										<img src="images/bg/as02.jpg" title="s1.jpg" width="1920" height="1001" class="rev-slidebg" data-no-retina>
+										<rs-layer
+											id="slider-1-slide-3-layer-5"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:260px,214px,162px,127px;"
+											data-text="w:normal;s:24,19,14,8;l:25,20,15,9;fw:300;"
+											data-frame_0="y:50;"
+											data-frame_1="st:310;sp:1000;sR:310;"
+											data-frame_999="o:0;st:w;sR:7690;"
+											style="z-index:16;font-family:Rubik;"
+											>通过CNAS 17025、ISO/IEC 27001
+										</rs-layer>
+										<rs-layer
+											id="slider-1-slide-3-layer-6"
+											data-type="text"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;yo:311px,256px,194px,149px;"
+											data-text="w:normal;s:90,74,56,34;l:95,78,59,36;ls:-1px,0px,0px,0px;fw:900;a:left,left,left,center;"
+											data-dim="w:auto,auto,auto,243px;h:303px,250px,189px,116px;"
+											data-frame_0="x:-50,-41,-31,-19;"
+											data-frame_1="st:1010;sp:1000;sR:1010;"
+											data-frame_999="o:0;st:w;sR:6990;"
+											style="z-index:15;font-family:Playfair Display;"
+											>体系认证
+											<span class="text-theme-colored1">.</span>
+										</rs-layer>
+										<rs-layer
+											id="slider-1-slide-3-layer-9"
+											class="rev-btn btn-theme-colored1"
+											data-type="button"
+											data-color="#252628"
+											data-rsp_ch="on"
+											data-xy="x:l,l,l,c;xo:30px,30px,30px,0;y:m;yo:213px,196px,114px,73px;"
+											data-text="w:normal;s:16,13,9,5;l:50,41,31,19;fw:500;a:center;"
+											data-dim="w:147px,121px,91px,56px;minh:0px,none,none,none;"
+											data-padding="r:20,17,13,8;l:20,17,13,8;"
+											data-border="boc:rgba(255,255,255,0.35);bow:1px,1px,1px,1px;bor:25px,25px,25px,25px;"
+											data-frame_0="x:-175%;o:1;"
+											data-frame_0_mask="u:t;x:100%;"
+											data-frame_1="e:Power3.easeOut;st:1420;sp:1000;sR:1420;"
+											data-frame_1_mask="u:t;"
+											data-frame_999="o:0;st:w;sR:6580;"
+											data-frame_hover="c:#000;bgc:#fff;boc:rgba(255,255,255,0.75);bor:25px,25px,25px,25px;bow:1px,1px,1px,1px;sp:200;e:Power1.easeInOut;"
+											style="z-index:13;font-family:Rubik;"
+											>了解更多
+										</rs-layer>
+									</rs-slide>
+								</rs-slides>
+								<rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+							</rs-module>
+						</rs-module-wrap>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container-fluid pb-90">
+				<div class="section-title">
+					<div class="row justify-content-md-center">
+						<div class="col-md-8">
+							<div class="text-center mb-60">
+								<div class="tm-sc-section-title section-title section-title-style1 text-center bg-img-center bg-no-repeat">
+									<div class="title-wrapper">
+										<h5 class="subtitle text-theme-colored1" >测评服务</h5>
+										<h2 class="title"><span class="text-theme-colored2">业务介绍</span></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-content">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="tm-sc-casestudies tm-sc-casestudies-carousel casestudies-style8-current-theme owl-dots-light-skin owl-dots-center">
+								<!-- Isotope Gallery Grid -->
+								<div class="owl-carousel owl-theme tm-owl-carousel-5col" data-nav="true" data-autoplay="true" data-loop="true">
+									<!-- the loop -->
+									<div class="tm-carousel-item criminal-law" th:each="tests : ${testList}">
+										<div class="tm-casestudy casestudies">
+											<div class="thumb">
+												<div class="thumb-inner">
+													<img th:src="${tests.showimage}" alt="" class="img-fullwidth"/>
+												</div>
+												<div class="details">
+													<ul class="cat-list">
+														<li><a href="#">测评服务</a><span>,</span></li>
+													</ul>
+													<div class="excerpt">
+														<span th:text="${tests.title}"></span>
+													</div>
+													<div class="btn-view-details ">
+														<a th:href="@{'/article?articleId=' + ${tests.id}}" class="btn btn-plain-text-with-arrow btn-sm mt-15 text-theme-colored1">查看详情</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end of the loop -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-silver-light">
+			<div class="container">
+				<div class="section-content">
+					<div class="row">
+						<div class="border-right mb-lg-40 col-xl-4">
+							<p class="mb-15">软件评测、信息系统安全等级保护测评、信息系统风险评估...</p>
+							<h2 class="mt-0">了解您的信息系统</h2>
+							<div class="tm-sc-button mt-30">
+								<a href="https://www.sstl-business.org.cn/" target="_blank" class="btn btn-theme-colored1 btn-round">业务受理 </a>
+							</div>
+						</div>
+						<div class="col-md-12 col-xl-8 pl-60 pl-sm-0">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-image text-left iconbox-centered-in-responsive icon-position-icon-left mb-30">
+										<div class="icon-box-wrapper">
+											<a class="icon icon-type-image icon-default icon-bordered">
+												<div class="thumb-wrapper ">
+													<img class="thumb" src="images/icon/law1.png" alt="Image">
+												</div>
+											</a>
+											<div class="icon-text">
+												<h3 class="icon-box-title mt-0 mb-10">检验检测机构资质认可</h3>
+												<div class="content">
+													<p>160909341085</p>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-image text-left iconbox-centered-in-responsive icon-position-icon-left mb-30">
+										<div class="icon-box-wrapper">
+											<a class="icon icon-type-image icon-default icon-bordered">
+												<div class="thumb-wrapper ">
+													<img class="thumb" src="images/icon/law1.png" alt="Image">
+												</div>
+											</a>
+											<div class="icon-text">
+												<h3 class="icon-box-title mt-0 mb-10">信息安全风险评估机构</h3>
+												<div class="content">
+													<p>ISCCC-2016-ISV-RV-142</p>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-image text-left iconbox-centered-in-responsive icon-position-icon-left mb-lg-30">
+										<div class="icon-box-wrapper">
+											<a class="icon icon-type-image icon-default icon-bordered">
+												<div class="thumb-wrapper ">
+													<img class="thumb" src="images/icon/law1.png" alt="Image">
+												</div>
+											</a>
+											<div class="icon-text">
+												<h3 class="icon-box-title mt-0 mb-10">CNAS检验机构</h3>
+												<div class="content">
+													<p>CNAS IB0273</p>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="tm-sc-icon-box icon-box icon-left tm-iconbox-icontype-image text-left iconbox-centered-in-responsive icon-position-icon-left">
+										<div class="icon-box-wrapper">
+											<a class="icon icon-type-image icon-default icon-bordered">
+												<div class="thumb-wrapper ">
+													<img class="thumb" src="images/icon/law1.png" alt="Image">
+												</div>
+											</a>
+											<div class="icon-text">
+												<h3 class="icon-box-title mt-0 mb-10">CNAS实验室</h3>
+												<div class="content">
+													<p>CNAS L0286</p>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div class="container">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-md-12 col-lg-6">
+							<br/><br/><br/><img src="images/about/us.jpg" alt="Image">
+						</div>
+						<div class="col-sm-12 col-lg-6">
+							<h6 class="text-theme-colored1 mt-40 mb-30" >关于我们</h6>
+							<h2 class="mb-30">上海市计算机软件评测重点实验室（SSTL）是全国最早的第三方专业测评机构之一</h2>
+							<p>具有三十余年的丰富行业经验，是上海市科委IT领域九大重点实验室之一，隶属于上海计算机软件技术开发中心。专业从事计算机软件工程、软件质量、信息安全等级保护测评、软件测试与评估、网络监测技术的研究，为组织信息化提供故障定位与性能调优服务，为信息系统建设提供信息化评估与测试外包服务，为软件系统提供全过程的质量保证专业服务。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-theme-colored2 section-typo-light" data-tm-bg-img="images/bg/map-bg.png">
+			<div class="container">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6 col-xs-12 mb-sm-40">
+							<div class="tm-sc-funfact funfact funfact-lefticon mb-lg-60">
+								<div class="float-left">
+									<div class="funfact-icon text-theme-colored1 font-size-54">
+										<i class="flaticon-contact-025-world"></i>
+									</div>
+								</div>
+								<div class="details">
+									<h2 class="counter text-white mt-0 mb-0 pt-10" >
+										<span class="animate-number" th:data-value="${indexamount1!=null}?${indexamount1}" data-animation-duration="1500">0</span><span class="counter-postfix">+</span>
+									</h2>
+									<h6 class="title text-white" >科研成果</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-xs-12 mb-sm-40">
+							<div class="tm-sc-funfact funfact funfact-lefticon mb-lg-60">
+								<div class="float-left">
+									<div class="funfact-icon text-theme-colored1 font-size-54">
+										<i class="flaticon-contact-039-home" ></i>
+									</div>
+								</div>
+								<div class="details">
+									<h2 class="counter text-white mt-0 mb-0 pt-10" >
+										<span class="animate-number" th:data-value="${indexamount2!=null}?${indexamount2}" data-animation-duration="1500">0</span><span class="counter-postfix">+</span>
+									</h2>
+									<h6 class="title text-white" >服务企业数量</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-xs-12 mb-sm-40">
+							<div class="tm-sc-funfact funfact funfact-lefticon mb-lg-60">
+								<div class="float-left">
+									<div class="funfact-icon text-theme-colored1 font-size-54">
+										<i class="flaticon-contact-008-mobile-phone" ></i>
+									</div>
+								</div>
+								<div class="details">
+									<h2 class="counter text-white mt-0 mb-0 pt-10" >
+										<span class="animate-number" th:data-value="${indexamount3!=null}?${indexamount3}" data-animation-duration="1500">0</span><span class="counter-postfix">+</span>
+									</h2>
+									<h6 class="title text-white" >项目总数量</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 col-xs-12">
+							<div class="tm-sc-funfact funfact funfact-lefticon">
+								<div class="float-left">
+									<div class="funfact-icon text-theme-colored1 font-size-54">
+										<i class="flaticon-contact-034-schedule" ></i>
+									</div>
+								</div>
+								<div class="details">
+									<h2 class="counter text-white mt-0 mb-0 pt-10" >
+										<span class="animate-number" th:data-value="${indexamount4!=null}?${indexamount4}" data-animation-duration="1500">0</span><span class="counter-postfix">+</span>
+									</h2>
+									<h6 class="title text-white" >年度项目数量</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-tm-bg-img="images/bg/1c9.png">
+			<div class="container pb-80">
+				<div class="section-title">
+					<div class="row">
+						<div class="col-sm-8 col-md-4">
+							<h5 class="tm-sc-line-with-text mt-0 mb-0 text-gray line-after-title">
+								<span class="horizontal-text">最新资讯 & 公告</span>
+								<span class="horizontal-line bg-theme-colored1"></span>
+							</h5>
+							<div class="tm-sc-section-title section-title section-title-style1 text-left">
+								<div class="title-wrapper">
+									<h2 class="title">
+										<span class="">新闻</span>
+										<span class="text-theme-colored1">中心</span>
+									</h2>
+									<div class="title-seperator-line"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<p>拥有价格超过5000万的测评工具和专业测评团队，通过中国合格评定国家认可委员会认可（CNAS）的认可实验室和检验机构认可、ISO/IEC 27001:2013信息安全管理体系认证。</p>
+						</div>
+						<div class="col-sm-4 col-md-2">
+							<div class="tm-sc-button text-right mt-10 d-none d-md-block d-sm-none mt-md-15">
+								<a href="/list?typestr=新闻中心" class="btn btn-theme-colored1">查看更多</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-content">
+					<div class="row">
+
+						<div class="col-md-6 col-lg-6 col-xl-4" th:each="news : ${newsList}">
+							<div class="tm-sc-blog tm-sc-blog-grid blog-style1-current-theme mb-lg-30">
+								<article class="post">
+									<div class="entry-header">
+										<div class="post-thumb lightgallery-lightbox">
+											<div class="post-thumb-inner">
+												<div class="thumb">
+													<img th:src="${news.showimage}" alt="Image"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="entry-content">
+										<h5 class="entry-title"><a th:href="@{'/article?articleId=' + ${news.id}}" rel="bookmark" th:text="${news.title}"></a></h5>
+										<ul class="entry-meta list-inline">
+											<li class="list-inline-item posted-date"><i class="fa fa-calendar-o"></i><time class="entry-date published updated" th:text="${#dates.format(news.createdate, 'yyyy-MM-dd HH:mm:ss')}"></time></li>
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-theme-colored1">
+			<div class="container pt-60 pb-60">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-sm-1 col-lg-2 col-md-1">
+						</div>
+						<div class="pt-25 col-sm-5 col-lg-3 col-md-5 col-xs-12">
+							<h4 class="text-white mt-0 text-left text-sm-right" >查询您的测试进度</h4>
+						</div>
+						<div class="pt-0 col-sm-6 col-lg-4 col-md-5 col-xs-12">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div role="form" class="wpcf7" id="wpcf7-f207-p9-o1" lang="en-US" dir="ltr">
+										<div class="screen-reader-response"></div>
+										<form action="/searchReport" method="post" class="wpcf7-form" novalidate="novalidate">
+											<div>
+												<input type="hidden" name="_wpcf7" value="207" />
+												<input type="hidden" name="_wpcf7_version" value="5.1.4" />
+												<input type="hidden" name="_wpcf7_locale" value="en_US" />
+												<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f207-p9-o1" />
+												<input type="hidden" name="_wpcf7_container_post" value="9"/>
+											</div>
+											<div class="tm-cf7-subscription-form-round-btn mt-10">
+												<span class="wpcf7-form-control-wrap your-email"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="请输入您预留的手机号" /></span>
+												<div class="submit-btn"><input type="submit" value="查询" class="wpcf7-form-control wpcf7-submit btn btn-theme-colored2" /></div>
+											</div>
+											<div class="wpcf7-response-output wpcf7-display-none"></div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 col-md-4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer th:replace="common::bottombar"></footer>
+	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<script src="assets/dist/js/custom.js"></script>
+<script src="assets/dist/js/extra-rev-slider.js"></script>
+</body>
+</html>
+

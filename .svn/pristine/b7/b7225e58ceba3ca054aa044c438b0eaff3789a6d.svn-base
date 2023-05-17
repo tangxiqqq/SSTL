@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sstl.org.cn:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sstl.org.cn</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="org-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sstl.org.cn:war exploded" />
+    </root>
+  </artifact>
+</component>

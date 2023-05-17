@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Templates</title>
+</head>
+<body>
+<header id="header" class="header header-layout-type-header-2rows" th:fragment="topbar">
+            <div class="header-top ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-auto header-top-left align-self-center text-center text-xl-left">
+                            <ul class="element contact-info">
+                                <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> 021-54325166、021-64514397</li>
+                                <li class="contact-email"><i class="fa fa-envelope-o font-icon sm-display-block"></i> sstl_cs@sscenter.sh.cn</li>
+                                <li class="contact-address"><i class="fa fa-map-o font-icon sm-display-block"></i> 上海市联航路1588号技术中心大楼3楼</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto ml-xl-auto header-top-right align-self-center text-center text-xl-right">
+                            <div class="element">
+                                <ul class="header-top-nav list-inline">
+                                    <li class="menu-item"><a title="" class="menu-item-link" href="/"><strong>首页</strong></a></li>
+                                    <li class="menu-item"><a title="" class="menu-item-link" href="https://www.sstl-business.org.cn/" target="_blank"><strong>业务受理</strong></a></li>
+                                    <li class="menu-item"><a title="" class="menu-item-link" href="/aboutus"><strong>关于我们</strong></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-wrapper navbar-scrolltofixed green">
+                    <div class="menuzord-container header-nav-container green ">
+                        <div class="container position-relative">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row header-nav-col-row">
+                                        <div class="col-sm-auto align-self-center">
+                                            <a class="menuzord-brand site-brand" href="/">
+                                                <img class="logo-default logo-1x" src="/images/sstl-logo-wide.png" alt="Logo">
+                                                <img class="logo-default logo-2x retina" src="/images/sstl-logo-wide@3x.png" alt="Logo">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-auto ml-auto pr-0 align-self-center">
+                                            <nav id="top-primary-nav" class="menuzord dark" data-effect="fade" data-animation="none" data-align="right">
+                                                <ul id="main-nav" class="menuzord-menu">
+                                                    <li><a href="/">首页</a></li>
+                                                    <li><a href="/list?typestr=业务介绍">业务介绍</a></li>
+                                                    <li><a href="javascript:void(0)">最新资讯</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="/list?typestr=新闻中心">新闻中心</a></li>
+                                                            <li><a href="https://www.sstl.org.cn/ICIS2021/index.html">ICIS 2021</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">测评服务</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="https://www.sstl-business.org.cn/" target="_blank">业务受理</a></li>
+                                                            <li><a href="/list?typestr=评测申请">评测申请</a></li>
+                                                            <li><a href="/list?typestr=典型案例">典型案例</a></li>
+                                                            <li><a href="/list?typestr=技术交流">技术交流</a></li>
+                                                            <li><a href="/impartiality">公正性声明</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">产权资质</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="/list?typestr=知识产权">知识产权</a></li>
+                                                            <li><a href="/qualification">权威资质</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="javascript:void(0)">公告</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="/list?typestr=公示公告">公示公告</a></li>
+                                                            <li><a href="/list?typestr=报告公告">报告公告</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="row d-block d-xl-none">
+                                        <div class="col-12">
+                                            <nav id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+                                                <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<footer id="footer" class="footer" th:fragment="bottombar">
+            <div class="footer-widget-area">
+                <div class="container pt-90 pb-60">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div id="tm_widget_contact_info-1" class="split-nav-menu clearfix widget widget-contact-info clearfix mb-20">
+                                <div class="tm-widget tm-widget-contact-info contact-info contact-info-style1  contact-icon-theme-colored1">
+                                    <div class="thumb">
+                                        <img alt="Logo" src="/images/logo-wide-white.png">
+                                    </div>
+                                    <div class="description">总部：中国上海联航路1588号技术中心大楼3楼 <br/>业务受理点：中国上海钦州路100号1号楼706室 <br/>受理电话：021-64511296 64514397</div>
+                                </div>
+                            </div>
+                            <div id="tm_widget_social_list_custom-1" class="split-nav-menu clearfix widget widget-social-list-custom clearfix">
+                                <ul class="tm-widget tm-widget-social-list tm-widget-social-list-custom styled-icons  icon-dark  icon-rounded icon-theme-colored1 mt-20">
+                                    <li><a class="social-link" href="javascript:void(0)" ><i class="fa fa-wechat"></i></a></li>
+                                    <li><a class="social-link" href="javascript:void(0)" ><i class="fa fa-qq"></i></a></li>
+                                    <li><a class="social-link" href="javascript:void(0)" ><i class="fa fa-chrome"></i></a></li>
+                                    <li><a class="social-link" href="javascript:void(0)" ><i class="fa fa-phone"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div id="nav_menu-1" class="widget widget_nav_menu">
+                                <h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored2">评测申请</h4>
+                                <div class="menu-service-nav-menu-container">
+                                    <ul id="menu-service-nav-menu" class="menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20545"><a href="/assets/dist/docs/委托申请表.docx">委托申请表</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20546"><a href="/assets/dist/docs/信息系统安全等级保护测评委托申请表.docx">信息系统安全等级保护测评委托申请表</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20547"><a href="/assets/dist/docs/信息系统风险评估委托申请表.docx">信息系统风险评估委托申请表</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6">
+                            <div id="tm_widget_blog_list-1" class="split-nav-menu clearfix widget widget-blog-list clearfix">
+                                <h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored2">公示公告</h4>
+                                <div class="tm-widget tm-widget-blog-list ">
+                                    <article class="post media-post clearfix" th:each="public : ${publicList}"> <a class="post-thumb" href="/list?typestr=公示公告"><img width="100" height="70" src="/images/blog/5.jpg" class="" alt="" /></a>
+                                        <div class="post-right">
+                                            <h6 class="post-title"> <a th:href="@{'/article?articleId=' + ${public.id}}" th:text="${public.title}"></a> </h6>
+                                            <span class="post-date">
+										<time class="entry-date" datetime="2019-05-15T06:10:26+00:00" th:text="${#dates.format(public.createdate, 'yyyy-MM-dd HH:mm:ss')}"></time>
+										</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom" data-tm-bg-color="#2A2A2A">
+                    <div class="container">
+                        <div class="row pt-20 pb-20">
+                            <div class="col-sm-12">
+                                <div class="footer-paragraph text-center">
+                                    <a href="http://bszs.conac.cn/sitename?method=show&amp;id=5418E3A555C3587CE053012819AC8540" target="_blank">
+                                        <img id="imgConac" vspace="0" hspace="0" border="0" src="http://dcs.conac.cn/image/blue.png" data-bd-imgshare-binded="1">
+                                    </a>
+                                    <br/>
+                                    上海计算机软件技术开发中心 © 版权所有 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202012394">沪公网安备 31011202012394号</a> <a href="http://beian.miit.gov.cn">沪ICP备14033306号-2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
